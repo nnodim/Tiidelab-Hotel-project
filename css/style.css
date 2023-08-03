@@ -1,12 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/*Reset*/
+/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
 html,
 body {
     scroll-behavior: smooth;
@@ -19,55 +27,16 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
-    padding-bottom: 20px;
-}
 
 p {
     margin: 10px 0;
 }
 
+/* Navbar Styling */
 #navbar {
     background: #fff;
     color: #333;
     overflow: auto;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
-.lead {
-    font-size: 20px;
-}
-
-.btn {
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    background: #333;
-    padding: 13px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 0.3s;
-
-}
-
-.btn-light {
-    background: #f4f4f4;
-    color: #333;
-}
-
-.btn:hover {
-    background: #444;
-    color: #f7c08a;
 }
 
 #navbar a {
@@ -96,14 +65,51 @@ p {
     transition: 0.3s;
 }
 
-#navbar ul li a:hover,
-#navbar ul li a.current {
+.current {
+    background: #333;
+    color: #f7c08a;
+}
+
+/* Container for Main Content */
+/* .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 40px;
+} */
+
+/* Styling for Lead Text */
+/* .lead {
+    font-size: 20px;
+} */
+
+/* Styling for Buttons */
+/* .btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.3s;
+} */
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.btn:hover {
     background: #444;
     color: #f7c08a;
 }
 
+/* Showcase Section Styling */
 #showcase {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/image1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/image1.jpg') no-repeat center center/cover;
     height: calc(100% - 67px);
 }
 
@@ -127,6 +133,7 @@ p {
     line-height: 1.7em;
 }
 
+/* Home Info Section Styling */
 #home-info {
     height: 400px;
     margin: 100px 0;
@@ -149,7 +156,6 @@ p {
     width: 50%;
     height: 100%;
     padding: 50px 30px;
-
 }
 
 #home-info .info-content h2 {
@@ -163,6 +169,7 @@ p {
     line-height: 1.7em;
 }
 
+/* Features Section Styling */
 #features {
     margin: 100px 0;
 }
@@ -185,6 +192,7 @@ p {
     color: #f7c08a;
 }
 
+/* About Showcase Section Styling */
 #about-showcase {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/image1.jpg') no-repeat center center/cover;
     height: 400px;
@@ -205,6 +213,7 @@ p {
     line-height: 1.2em;
 }
 
+/* About Info Section Styling */
 #about-info {
     margin: 50px 0;
 }
@@ -226,7 +235,6 @@ p {
     font-size: 40px;
 }
 
-
 #about-info .info-left {
     font-size: 18px;
     line-height: 1.7em;
@@ -235,6 +243,7 @@ p {
     min-height: 100%;
 }
 
+/* Contact Showcase Section Styling */
 #contact-showcase {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contact.jpg') no-repeat center center/cover;
     height: 400px;
@@ -255,7 +264,7 @@ p {
     line-height: 1.2em;
 }
 
-
+/* Rooms Showcase Section Styling */
 #rooms-showcase {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/rooms.jpg') no-repeat center center/cover;
     height: 400px;
@@ -297,7 +306,7 @@ p {
     padding-bottom: 0;
 }
 
-.room-info p{
+.room-info p {
     color: #555;
 }
 
@@ -305,6 +314,7 @@ p {
     padding: 10px 20px;
 }
 
+/* Row Styling */
 .row {
     margin-bottom: 30px;
 }
@@ -314,12 +324,14 @@ p {
     display: table;
     clear: both;
 }
-.blk{
+
+.blk {
     display: block;
     width: 120px;
     margin: auto;
 }
 
+/* Contact Form Styling */
 #contact-form {
     margin: 50px 0;
 }
@@ -346,6 +358,7 @@ p {
     outline: none;
 }
 
+/* Main Footer Styling */
 #main-footer {
     text-align: center;
     padding: 30px;
@@ -353,13 +366,17 @@ p {
     color: #fff;
 }
 
+/* Clear Floats */
 .clr {
     clear: both;
 }
 
+/* Center Text */
 .center {
     text-align: center;
 }
+
+/* Pagination Styling */
 .pagination {
     text-align: center;
     display: inline-block;
