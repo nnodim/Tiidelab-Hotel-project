@@ -9,10 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.3.3"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "tw-elements": "^1.0.0-beta3"
+    "tw-elements": "^1.0.0-beta3",
+    "tailwindcss": "^3.3.3"
   }
 }
